@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Approach | Sharednet Infrastructure Ltd</title>
+    <meta name="description" content="Learn about Sharednet's process for managing and providing access to shared communications infrastructure.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#012867',
+                        'navy-light': '#02388e',
+                        teal: '#08a1da',
+                        'teal-light': '#0bb7f5',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { -webkit-font-smoothing: antialiased; font-family: Arial, Helvetica, sans-serif; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-white text-gray-900">
+
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <!-- Exact same nav as index.html -->
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="index.html" class="-m-1.5 p-1.5 flex flex-col">
+                    <img src="assets/images/logo.png" alt="Sharednet Infrastructure Ltd" class="h-20 w-auto object-contain">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" id="mobile-menu-open" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-navy">
+                    <span class="sr-only">Open main menu</span>
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-8 items-center">
+                <a href="index.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">Home</a>
+                <a href="about.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">About</a>
+                <a href="solutions.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">Solutions</a>
+                <a href="who-we-work-with.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">Who We Work With</a>
+                <a href="our-approach.html" class="text-sm font-medium leading-6 text-teal transition-colors hover:text-teal">Our Approach</a>
+                <a href="contact.html" class="rounded-md bg-teal px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-light transition-all">Discuss a Project</a>
+            </div>
+        </nav>
+        
+        <div id="mobile-menu" class="hidden lg:hidden" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 z-50 bg-black/20" id="mobile-menu-backdrop"></div>
+            <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-navy/10">
+                <div class="flex items-center justify-between">
+                    <a href="index.html" class="-m-1.5 p-1.5 flex flex-col">
+                        <img src="assets/images/logo.png" alt="Sharednet Infrastructure Ltd" class="h-14 w-auto object-contain">
+                    </a>
+                    <button type="button" id="mobile-menu-close" class="-m-2.5 rounded-md p-2.5 text-navy">
+                        <span class="sr-only">Close menu</span>
+                        <i data-lucide="x" class="h-6 w-6"></i>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-200">
+                        <div class="space-y-2 py-6">
+                            <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Home</a>
+                            <a href="about.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">About</a>
+                            <a href="solutions.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Solutions</a>
+                            <a href="who-we-work-with.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Who We Work With</a>
+                            <a href="our-approach.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-teal hover:bg-gray-50">Our Approach</a>
+                        </div>
+                        <div class="py-6 flex flex-col gap-4">
+                            <a href="contact.html" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Contact Us</a>
+                            <a href="contact.html" class="block rounded-md bg-teal px-3 py-3 text-center text-base font-semibold text-white shadow-sm hover:bg-teal-light">Discuss a Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Header -->
+        <div class="bg-navy py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="max-w-2xl">
+                    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Our Approach</h1>
+                    <p class="mt-6 text-lg leading-8 text-gray-300">
+                        A structured, transparent process for transforming passive infrastructure into a manageable, shared resource.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+            
+            <!-- Conceptual Diagram: Ecosystem -->
+            <section class="mb-32">
+                <div class="mx-auto max-w-2xl text-center mb-16">
+                    <h2 class="text-3xl font-bold tracking-tight text-navy sm:text-4xl">The Sharednet Ecosystem</h2>
+                    <p class="mt-4 text-lg leading-8 text-gray-600">
+                        Acting as the administrative and technical bridge between asset owners and service providers.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 md:p-16 border border-gray-100 flex flex-col items-center max-w-4xl mx-auto">
+                    <div class="w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4 relative">
+                        <!-- Connections (Desktop) -->
+                        <div class="hidden md:block absolute top-1/2 left-[20%] right-[20%] h-1 border-t-2 border-dashed border-teal/50 -z-0"></div>
+                        
+                        <!-- Left: Asset Owner -->
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6 text-center w-64 shadow-sm z-10 relative">
+                            <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-slate-500 font-bold">1</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-navy mb-2">Infrastructure Owner</h3>
+                            <p class="text-sm text-gray-500">Government, Municipality, or Utility Company</p>
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <p class="text-xs font-semibold text-teal text-left">• Owns the asset</p>
+                                <p class="text-xs font-semibold text-teal text-left mt-1">• Receives structured revenue</p>
+                            </div>
+                        </div>
+
+                        <!-- Center: Sharednet -->
+                        <div class="bg-navy border-2 border-navy rounded-xl p-6 text-center w-64 shadow-lg z-10 transform md:scale-105">
+                            <div class="w-12 h-12 bg-teal rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-white font-bold">2</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Sharednet</h3>
+                            <p class="text-sm text-teal-light">Management Role</p>
+                            <div class="mt-4 pt-4 border-t border-white/20">
+                                <p class="text-xs font-semibold text-gray-300 text-left">• Records & Maintenance</p>
+                                <p class="text-xs font-semibold text-gray-300 text-left mt-1">• Access Administration</p>
+                            </div>
+                        </div>
+
+                        <!-- Right: Users -->
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6 text-center w-64 shadow-sm z-10">
+                            <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-slate-500 font-bold">3</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-navy mb-2">Multiple Operators</h3>
+                            <p class="text-sm text-gray-500">MNOs, ISPs, Utility Users</p>
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <p class="text-xs font-semibold text-teal text-left">• Access shared capacity</p>
+                                <p class="text-xs font-semibold text-teal text-left mt-1">• Deliver retail services</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-xs text-gray-400 mt-12 text-center uppercase tracking-widest font-semibold">Conceptual Model</p>
+                </div>
+            </section>
+
+            <!-- Process Timeline -->
+            <section class="mb-32">
+                <div class="mx-auto max-w-2xl text-center mb-16">
+                    <h2 class="text-3xl font-bold tracking-tight text-navy sm:text-4xl">Our Process</h2>
+                    <p class="mt-4 text-lg leading-8 text-gray-600">
+                        From initial discussions to ongoing maintenance.
+                    </p>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="relative">
+                        <div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 -ml-[1px]"></div>
+                        
+                        <div class="space-y-12">
+                            <!-- Step 1 -->
+                            <div class="relative flex flex-col md:flex-row-reverse items-start">
+                                <div class="absolute left-6 md:left-1/2 -ml-6 w-12 h-12 rounded-full bg-white border-4 border-teal flex items-center justify-center z-10 shadow-sm">
+                                    <i data-lucide="message-square" class="w-5 h-5 text-teal"></i>
+                                </div>
+                                <div class="ml-16 md:ml-0 md:w-1/2 md:pl-16">
+                                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 hover:border-teal/30 transition-colors">
+                                        <span class="text-sm font-bold text-teal mb-2 block">Step 01</span>
+                                        <h3 class="text-xl font-bold text-navy mb-3">Discuss the asset or connectivity requirement</h3>
+                                        <p class="text-base text-gray-600 leading-relaxed">We begin by understanding the specific needs—whether an operator requires capacity along a specific route, or an asset owner wishes to commercialise existing infrastructure.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step 2 -->
+                            <div class="relative flex flex-col md:flex-row items-start">
+                                <div class="absolute left-6 md:left-1/2 -ml-6 w-12 h-12 rounded-full bg-white border-4 border-teal flex items-center justify-center z-10 shadow-sm">
+                                    <i data-lucide="map" class="w-5 h-5 text-teal"></i>
+                                </div>
+                                <div class="ml-16 md:ml-0 md:w-1/2 md:pr-16 md:text-right">
+                                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 hover:border-teal/30 transition-colors text-left md:text-right">
+                                        <span class="text-sm font-bold text-teal mb-2 block">Step 02</span>
+                                        <h3 class="text-xl font-bold text-navy mb-3">Survey infrastructure and establish condition</h3>
+                                        <p class="text-base text-gray-600 leading-relaxed">Our technical team conducts detailed surveys to map existing ducts, poles, and chambers, assessing their structural integrity and available capacity.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step 3 -->
+                            <div class="relative flex flex-col md:flex-row-reverse items-start">
+                                <div class="absolute left-6 md:left-1/2 -ml-6 w-12 h-12 rounded-full bg-white border-4 border-teal flex items-center justify-center z-10 shadow-sm">
+                                    <i data-lucide="file-check" class="w-5 h-5 text-teal"></i>
+                                </div>
+                                <div class="ml-16 md:ml-0 md:w-1/2 md:pl-16">
+                                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 hover:border-teal/30 transition-colors">
+                                        <span class="text-sm font-bold text-teal mb-2 block">Step 03</span>
+                                        <h3 class="text-xl font-bold text-navy mb-3">Agree access arrangements and approvals</h3>
+                                        <p class="text-base text-gray-600 leading-relaxed">We define clear responsibilities, secure the necessary regulatory and municipal approvals, and establish transparent access agreements for all parties.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step 4 -->
+                            <div class="relative flex flex-col md:flex-row items-start">
+                                <div class="absolute left-6 md:left-1/2 -ml-6 w-12 h-12 rounded-full bg-white border-4 border-teal flex items-center justify-center z-10 shadow-sm">
+                                    <i data-lucide="layers" class="w-5 h-5 text-teal"></i>
+                                </div>
+                                <div class="ml-16 md:ml-0 md:w-1/2 md:pr-16 md:text-right">
+                                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 hover:border-teal/30 transition-colors text-left md:text-right">
+                                        <span class="text-sm font-bold text-teal mb-2 block">Step 04</span>
+                                        <h3 class="text-xl font-bold text-navy mb-3">Prepare shared capacity and onboard users</h3>
+                                        <p class="text-base text-gray-600 leading-relaxed">We undertake any necessary civil works—such as installing microducts or upgrading poles—to prepare the infrastructure, followed by the structured onboarding of service providers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step 5 -->
+                            <div class="relative flex flex-col md:flex-row-reverse items-start">
+                                <div class="absolute left-6 md:left-1/2 -ml-6 w-12 h-12 rounded-full bg-white border-4 border-teal flex items-center justify-center z-10 shadow-sm">
+                                    <i data-lucide="clipboard-list" class="w-5 h-5 text-teal"></i>
+                                </div>
+                                <div class="ml-16 md:ml-0 md:w-1/2 md:pl-16">
+                                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 hover:border-teal/30 transition-colors">
+                                        <span class="text-sm font-bold text-teal mb-2 block">Step 05</span>
+                                        <h3 class="text-xl font-bold text-navy mb-3">Maintain records, manage access and coordinate maintenance</h3>
+                                        <p class="text-base text-gray-600 leading-relaxed">Ongoing management involves keeping accurate GIS records, processing access requests, handling billing, and coordinating proactive maintenance to ensure reliability.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Conceptual Diagram: Ducts -->
+            <section>
+                <div class="mx-auto max-w-2xl text-center mb-16">
+                    <h2 class="text-3xl font-bold tracking-tight text-navy sm:text-4xl">Organised Capacity</h2>
+                    <p class="mt-4 text-lg leading-8 text-gray-600">
+                        Structuring existing civil infrastructure for safe, multi-user access.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 md:p-16 border border-gray-100 flex flex-col items-center max-w-3xl mx-auto">
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 bg-white rounded-full border-[16px] border-slate-300 shadow-inner flex flex-col overflow-hidden">
+                        <!-- Top Compartment: Communications -->
+                        <div class="flex-1 bg-teal/5 border-b-4 border-slate-300 flex flex-col items-center justify-center relative p-4">
+                            <span class="absolute top-4 text-[10px] sm:text-xs font-bold text-teal uppercase tracking-wider">Communications Compartment</span>
+                            <div class="flex gap-4 mt-4">
+                                <div class="w-8 h-8 rounded-full border-2 border-teal bg-white flex items-center justify-center shadow-sm">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                </div>
+                                <div class="w-8 h-8 rounded-full border-2 border-teal bg-white flex items-center justify-center shadow-sm">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                </div>
+                                <div class="w-8 h-8 rounded-full border-2 border-teal bg-white flex items-center justify-center shadow-sm">
+                                    <div class="w-2 h-2 bg-orange-500 rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 mt-2">
+                                <div class="w-8 h-8 rounded-full border-2 border-dashed border-gray-300 bg-white shadow-sm flex items-center justify-center"></div>
+                                <div class="w-8 h-8 rounded-full border-2 border-dashed border-gray-300 bg-white shadow-sm flex items-center justify-center"></div>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Compartment: Power/Primary Utility -->
+                        <div class="h-1/3 bg-orange-50 flex flex-col items-center justify-center relative">
+                            <span class="absolute bottom-4 text-[10px] sm:text-xs font-bold text-orange-600 uppercase tracking-wider">Power / Utility Compartment</span>
+                            <div class="w-12 h-12 rounded-full border-4 border-orange-300 bg-orange-100 flex items-center justify-center mb-4">
+                                <div class="w-6 h-6 bg-orange-500 rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12 max-w-lg text-center">
+                        <p class="text-sm text-gray-500 font-medium">
+                            Conceptual illustration showing the physical separation of communications microducts from primary utility services within a managed duct environment.
+                        </p>
+                        <p class="text-xs text-gray-400 mt-4 uppercase tracking-widest font-semibold">Not an engineering specification</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white mt-auto">
+        <!-- Exact same footer as index.html -->
+        <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <div class="flex flex-col">
+                        <img src="assets/images/logo.png" alt="Sharednet Infrastructure Ltd" class="h-16 w-auto object-contain brightness-0 invert">
+                    </div>
+                    <p class="text-sm leading-6 text-gray-300 max-w-xs">
+                        A carrier-neutral infrastructure partner for operators, utilities, and asset owners in Uganda.
+                    </p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold leading-6 text-white">Solutions</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li><a href="solutions.html#shared-poles" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Shared Poles</a></li>
+                                <li><a href="solutions.html#service-ducts" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Service Ducts & Microducts</a></li>
+                                <li><a href="solutions.html#fibre-installation" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Fibre Installation & Leasing</a></li>
+                                <li><a href="solutions.html#infrastructure-access" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Infrastructure Access Management</a></li>
+                                <li><a href="solutions.html#asset-records" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Asset Records & Maintenance</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li><a href="about.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                                <li><a href="who-we-work-with.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Who We Work With</a></li>
+                                <li><a href="our-approach.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Our Approach</a></li>
+                                <li><a href="contact.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:mt-0">
+                        <h3 class="text-sm font-semibold leading-6 text-white">Contact</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li class="flex items-start">
+                                <i data-lucide="map-pin" class="h-5 w-5 text-teal shrink-0 mr-3 mt-0.5"></i>
+                                <span class="text-sm leading-6 text-gray-300">
+                                    Plot 23, Bukoto–Kisasi Road<br />
+                                    Opposite Kabira Country Club<br />
+                                    Kampala, Uganda<br />
+                                    P.O. Box 210563
+                                </span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="phone" class="h-5 w-5 text-teal shrink-0 mr-3"></i>
+                                <a href="tel:+256774016000" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">+256 774 016000</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="mail" class="h-5 w-5 text-teal shrink-0 mr-3"></i>
+                                <a href="mailto:info@sharednet.co.ug" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">info@sharednet.co.ug</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+                <p class="text-xs leading-5 text-gray-400">
+                    &copy; 2026 Sharednet Infrastructure Ltd. All rights reserved. Subsidiary of Ron Outsourcing Ltd.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

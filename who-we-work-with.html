@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who We Work With | Sharednet Infrastructure Ltd</title>
+    <meta name="description" content="Sharednet partners with operators, public asset owners, utilities, and infrastructure owners in Uganda.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#012867',
+                        'navy-light': '#02388e',
+                        teal: '#08a1da',
+                        'teal-light': '#0bb7f5',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { -webkit-font-smoothing: antialiased; font-family: Arial, Helvetica, sans-serif; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-white text-gray-900">
+
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <!-- Exact same nav as index.html -->
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="index.html" class="-m-1.5 p-1.5 flex flex-col">
+                    <img src="assets/images/logo.png" alt="Sharednet Infrastructure Ltd" class="h-20 w-auto object-contain">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" id="mobile-menu-open" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-navy">
+                    <span class="sr-only">Open main menu</span>
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-8 items-center">
+                <a href="index.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">Home</a>
+                <a href="about.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">About</a>
+                <a href="solutions.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">Solutions</a>
+                <a href="who-we-work-with.html" class="text-sm font-medium leading-6 text-teal transition-colors hover:text-teal">Who We Work With</a>
+                <a href="our-approach.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">Our Approach</a>
+                <a href="contact.html" class="rounded-md bg-teal px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-light transition-all">Discuss a Project</a>
+            </div>
+        </nav>
+        
+        <div id="mobile-menu" class="hidden lg:hidden" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 z-50 bg-black/20" id="mobile-menu-backdrop"></div>
+            <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-navy/10">
+                <div class="flex items-center justify-between">
+                    <a href="index.html" class="-m-1.5 p-1.5 flex flex-col">
+                        <img src="assets/images/logo.png" alt="Sharednet Infrastructure Ltd" class="h-14 w-auto object-contain">
+                    </a>
+                    <button type="button" id="mobile-menu-close" class="-m-2.5 rounded-md p-2.5 text-navy">
+                        <span class="sr-only">Close menu</span>
+                        <i data-lucide="x" class="h-6 w-6"></i>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-200">
+                        <div class="space-y-2 py-6">
+                            <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Home</a>
+                            <a href="about.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">About</a>
+                            <a href="solutions.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Solutions</a>
+                            <a href="who-we-work-with.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-teal hover:bg-gray-50">Who We Work With</a>
+                            <a href="our-approach.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Our Approach</a>
+                        </div>
+                        <div class="py-6 flex flex-col gap-4">
+                            <a href="contact.html" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Contact Us</a>
+                            <a href="contact.html" class="block rounded-md bg-teal px-3 py-3 text-center text-base font-semibold text-white shadow-sm hover:bg-teal-light">Discuss a Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Header -->
+        <div class="bg-navy py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="max-w-2xl">
+                    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Who We Work With</h1>
+                    <p class="mt-6 text-lg leading-8 text-gray-300">
+                        We provide a practical, carrier-neutral platform designed to serve the distinct needs of operators, asset owners, and utilities.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+            <div class="space-y-24">
+                
+                <!-- Operators -->
+                <div id="operators" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold tracking-tight text-navy flex items-center gap-3 border-b border-gray-200 pb-4">
+                        <i data-lucide="signal" class="h-6 w-6 text-teal"></i>
+                        Communications Operators
+                    </h2>
+                    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="md:col-span-2 space-y-6 text-base leading-7 text-gray-600">
+                            <p>
+                                <strong>Intended Audience:</strong> Mobile network operators, Internet Service Providers (ISPs), and wholesale carriers.
+                            </p>
+                            <p>
+                                <strong>Their Requirement:</strong> Rapid, reliable, and cost-effective access to civil infrastructure to expand network coverage, increase capacity, and connect businesses or residential areas without the delays and capital expense of independent civil works.
+                            </p>
+                            <p>
+                                <strong>Our Proposed Role:</strong> We provide structured access to shared poles and managed service ducts. By offering carrier-neutral capacity, we enable operators to deploy fibre quickly and maintain their networks efficiently, guided by transparent access agreements and clear maintenance protocols.
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex flex-col justify-center h-full">
+                            <h3 class="text-sm font-semibold text-navy uppercase tracking-wider mb-4">Take the Next Step</h3>
+                            <a href="contact.html?enquiry=Infrastructure Access" class="inline-flex items-center justify-between rounded-md bg-teal px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-teal-light transition-colors">
+                                Enquire about Access <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Public Asset Owners -->
+                <div id="public-assets" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold tracking-tight text-navy flex items-center gap-3 border-b border-gray-200 pb-4">
+                        <i data-lucide="building-2" class="h-6 w-6 text-teal"></i>
+                        Public Asset Owners
+                    </h2>
+                    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="md:col-span-2 space-y-6 text-base leading-7 text-gray-600">
+                            <p>
+                                <strong>Intended Audience:</strong> Government agencies, local authorities, and municipalities.
+                            </p>
+                            <p>
+                                <strong>Their Requirement:</strong> Organising the deployment of communications infrastructure to reduce street clutter, prevent repeated road excavations, and effectively commercialise existing public ducts and civil assets.
+                            </p>
+                            <p>
+                                <strong>Our Proposed Role:</strong> We act as the infrastructure manager, surveying existing assets, installing microducts to organise cables, and handling the administrative burden of multiple operator access requests. We ensure compliance with civic standards while generating structured reporting and revenue tracking for the asset owner.
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex flex-col justify-center h-full">
+                            <h3 class="text-sm font-semibold text-navy uppercase tracking-wider mb-4">Take the Next Step</h3>
+                            <a href="contact.html?enquiry=Asset Management" class="inline-flex items-center justify-between rounded-md bg-teal px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-teal-light transition-colors">
+                                Discuss Asset Management <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Utilities -->
+                <div id="utilities" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold tracking-tight text-navy flex items-center gap-3 border-b border-gray-200 pb-4">
+                        <i data-lucide="lightbulb" class="h-6 w-6 text-teal"></i>
+                        Utilities
+                    </h2>
+                    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="md:col-span-2 space-y-6 text-base leading-7 text-gray-600">
+                            <p>
+                                <strong>Intended Audience:</strong> Electricity distributors, water authorities, and organisations delivering connected public services.
+                            </p>
+                            <p>
+                                <strong>Their Requirement:</strong> Safely accommodating communications cables on their utility poles or within their corridors without compromising the safety, maintenance, or reliability of their primary utility services.
+                            </p>
+                            <p>
+                                <strong>Our Proposed Role:</strong> We propose managing the communications layer of utility infrastructure. This involves documenting attachment positions, ensuring structural compliance, coordinating maintenance windows, and acting as the single point of contact for operators seeking access to utility assets.
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex flex-col justify-center h-full">
+                            <h3 class="text-sm font-semibold text-navy uppercase tracking-wider mb-4">Take the Next Step</h3>
+                            <a href="contact.html?enquiry=Shared Poles" class="inline-flex items-center justify-between rounded-md bg-teal px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-teal-light transition-colors">
+                                Discuss Shared Poles <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infrastructure Partners -->
+                <div id="partners" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold tracking-tight text-navy flex items-center gap-3 border-b border-gray-200 pb-4">
+                        <i data-lucide="users" class="h-6 w-6 text-teal"></i>
+                        Infrastructure Owners & Technical Partners
+                    </h2>
+                    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="md:col-span-2 space-y-6 text-base leading-7 text-gray-600">
+                            <p>
+                                <strong>Intended Audience:</strong> Private infrastructure developers, real estate managers, and technical service providers.
+                            </p>
+                            <p>
+                                <strong>Their Requirement:</strong> Establishing carrier-neutral connectivity within private estates or business parks, or partnering to deliver specialised infrastructure solutions.
+                            </p>
+                            <p>
+                                <strong>Our Proposed Role:</strong> We design and manage internal shared infrastructure for developments, ensuring multiple service providers can connect residents or businesses without duplicating internal wiring or civil works. We also engage with technical partners to deliver maintenance and installation services.
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex flex-col justify-center h-full">
+                            <h3 class="text-sm font-semibold text-navy uppercase tracking-wider mb-4">Take the Next Step</h3>
+                            <a href="contact.html?enquiry=Partnerships" class="inline-flex items-center justify-between rounded-md bg-teal px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-teal-light transition-colors">
+                                Explore Partnerships <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white mt-auto">
+        <!-- Exact same footer as index.html -->
+        <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <div class="flex flex-col">
+                        <img src="assets/images/logo.png" alt="Sharednet Infrastructure Ltd" class="h-16 w-auto object-contain brightness-0 invert">
+                    </div>
+                    <p class="text-sm leading-6 text-gray-300 max-w-xs">
+                        A carrier-neutral infrastructure partner for operators, utilities, and asset owners in Uganda.
+                    </p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold leading-6 text-white">Solutions</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li><a href="solutions.html#shared-poles" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Shared Poles</a></li>
+                                <li><a href="solutions.html#service-ducts" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Service Ducts & Microducts</a></li>
+                                <li><a href="solutions.html#fibre-installation" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Fibre Installation & Leasing</a></li>
+                                <li><a href="solutions.html#infrastructure-access" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Infrastructure Access Management</a></li>
+                                <li><a href="solutions.html#asset-records" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Asset Records & Maintenance</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li><a href="about.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                                <li><a href="who-we-work-with.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Who We Work With</a></li>
+                                <li><a href="our-approach.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Our Approach</a></li>
+                                <li><a href="contact.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:mt-0">
+                        <h3 class="text-sm font-semibold leading-6 text-white">Contact</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li class="flex items-start">
+                                <i data-lucide="map-pin" class="h-5 w-5 text-teal shrink-0 mr-3 mt-0.5"></i>
+                                <span class="text-sm leading-6 text-gray-300">
+                                    Plot 23, Bukoto–Kisasi Road<br />
+                                    Opposite Kabira Country Club<br />
+                                    Kampala, Uganda<br />
+                                    P.O. Box 210563
+                                </span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="phone" class="h-5 w-5 text-teal shrink-0 mr-3"></i>
+                                <a href="tel:+256774016000" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">+256 774 016000</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="mail" class="h-5 w-5 text-teal shrink-0 mr-3"></i>
+                                <a href="mailto:info@sharednet.co.ug" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">info@sharednet.co.ug</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+                <p class="text-xs leading-5 text-gray-400">
+                    &copy; 2026 Sharednet Infrastructure Ltd. All rights reserved. Subsidiary of Ron Outsourcing Ltd.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

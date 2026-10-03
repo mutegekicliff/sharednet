@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Sharednet Infrastructure Ltd</title>
+    <meta name="description" content="Learn about Sharednet Infrastructure Ltd and our carrier-neutral model for shared passive infrastructure.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#012867',
+                        'navy-light': '#02388e',
+                        teal: '#08a1da',
+                        'teal-light': '#0bb7f5',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { -webkit-font-smoothing: antialiased; font-family: Arial, Helvetica, sans-serif; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-white text-gray-900">
+
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="index.html" class="-m-1.5 p-1.5 flex flex-col">
+                    <img src="assets/images/logo.png" alt="Sharednet Infrastructure Ltd" class="h-20 w-auto object-contain">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" id="mobile-menu-open" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-navy">
+                    <span class="sr-only">Open main menu</span>
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-8 items-center">
+                <a href="index.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">Home</a>
+                <a href="about.html" class="text-sm font-medium leading-6 text-teal transition-colors hover:text-teal">About</a>
+                <a href="solutions.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">Solutions</a>
+                <a href="who-we-work-with.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">Who We Work With</a>
+                <a href="our-approach.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">Our Approach</a>
+                <a href="contact.html" class="rounded-md bg-teal px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-light transition-all">Discuss a Project</a>
+            </div>
+        </nav>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden lg:hidden" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 z-50 bg-black/20" id="mobile-menu-backdrop"></div>
+            <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-navy/10">
+                <div class="flex items-center justify-between">
+                    <a href="index.html" class="-m-1.5 p-1.5 flex flex-col">
+                        <img src="assets/images/logo.png" alt="Sharednet Infrastructure Ltd" class="h-14 w-auto object-contain">
+                    </a>
+                    <button type="button" id="mobile-menu-close" class="-m-2.5 rounded-md p-2.5 text-navy">
+                        <span class="sr-only">Close menu</span>
+                        <i data-lucide="x" class="h-6 w-6"></i>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-200">
+                        <div class="space-y-2 py-6">
+                            <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Home</a>
+                            <a href="about.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-teal hover:bg-gray-50">About</a>
+                            <a href="solutions.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Solutions</a>
+                            <a href="who-we-work-with.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Who We Work With</a>
+                            <a href="our-approach.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Our Approach</a>
+                        </div>
+                        <div class="py-6 flex flex-col gap-4">
+                            <a href="contact.html" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Contact Us</a>
+                            <a href="contact.html" class="block rounded-md bg-teal px-3 py-3 text-center text-base font-semibold text-white shadow-sm hover:bg-teal-light">Discuss a Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Header -->
+        <div class="bg-navy py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="max-w-2xl">
+                    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">About Us</h1>
+                    <p class="mt-6 text-lg leading-8 text-gray-300">
+                        Developing a structured, wholesale-only approach to shared passive infrastructure in Uganda.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+            <div class="mx-auto max-w-3xl lg:mx-0">
+                <h2 class="text-3xl font-bold tracking-tight text-navy sm:text-4xl">Our Focus</h2>
+                <p class="mt-6 text-xl leading-8 text-gray-600">
+                    Sharednet Infrastructure Ltd is a subsidiary of Ron Outsourcing Ltd, established with a specific focus on shared passive infrastructure.
+                </p>
+                <div class="mt-10 max-w-2xl text-base leading-7 text-gray-600 space-y-6">
+                    <p>
+                        Our proposed operating model is wholesale-only and carrier-neutral. We aim to provide the physical foundation—such as poles and ducts—that different communications operators and utilities can share effectively.
+                    </p>
+                    <div class="bg-teal/10 border-l-4 border-teal p-6 rounded-r-lg my-8">
+                        <p class="text-lg font-medium text-navy">
+                            "Carrier-neutral means infrastructure access is offered across operators, with clear terms and equal treatment."
+                        </p>
+                    </div>
+                    <p>
+                        By focusing exclusively on passive infrastructure, we do not compete with our users in the retail communications market. Instead, we provide a collaborative platform that reduces the need for duplicated construction, minimises civic disruption, and lowers the barriers to network expansion.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mx-auto mt-24 max-w-2xl lg:max-w-none">
+                <h2 class="text-3xl font-bold tracking-tight text-navy sm:text-4xl mb-12">Our Proposed Role</h2>
+                <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+                    <div class="flex flex-col">
+                        <dt class="text-xl font-semibold leading-7 text-navy flex items-center gap-3">
+                            <i data-lucide="server" class="h-6 w-6 text-teal"></i>
+                            Infrastructure Management
+                        </dt>
+                        <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                            <p class="flex-auto">
+                                We intend to manage and commercialise existing service ducts and poles, ensuring they are utilised efficiently. This includes installing microducts to organise cables and create additional capacity within established routes.
+                            </p>
+                        </dd>
+                    </div>
+                    <div class="flex flex-col">
+                        <dt class="text-xl font-semibold leading-7 text-navy flex items-center gap-3">
+                            <i data-lucide="shield" class="h-6 w-6 text-teal"></i>
+                            Access Administration
+                        </dt>
+                        <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                            <p class="flex-auto">
+                                We act as the administrative bridge between asset owners and operators. Our role involves managing infrastructure access agreements, transparent billing, collections, and detailed reporting to ensure accountability.
+                            </p>
+                        </dd>
+                    </div>
+                    <div class="flex flex-col">
+                        <dt class="text-xl font-semibold leading-7 text-navy flex items-center gap-3">
+                            <i data-lucide="info" class="h-6 w-6 text-teal"></i>
+                            Maintenance & Records
+                        </dt>
+                        <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                            <p class="flex-auto">
+                                Accurate data is critical. We propose maintaining detailed GIS records of ducts, chambers, poles, occupancy, and condition. We also coordinate the maintenance of shared infrastructure and the structured migration of cables from duplicated routes.
+                            </p>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div class="mt-24 pt-16 border-t border-gray-200">
+                <div class="bg-gray-50 rounded-2xl p-8 sm:p-12 flex flex-col sm:flex-row items-center justify-between gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold tracking-tight text-navy">Partner with us</h3>
+                        <p class="mt-4 text-base text-gray-600 max-w-xl">
+                            Whether you are an operator seeking network capacity or an asset owner looking to manage infrastructure access, we provide a structured approach.
+                        </p>
+                    </div>
+                    <a href="contact.html" class="rounded-md bg-navy px-6 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-navy-light transition-colors shrink-0">
+                        Contact Our Team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white mt-auto">
+        <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <div class="flex flex-col">
+                        <img src="assets/images/logo.png" alt="Sharednet Infrastructure Ltd" class="h-16 w-auto object-contain brightness-0 invert">
+                    </div>
+                    <p class="text-sm leading-6 text-gray-300 max-w-xs">
+                        A carrier-neutral infrastructure partner for operators, utilities, and asset owners in Uganda.
+                    </p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold leading-6 text-white">Solutions</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li><a href="solutions.html#shared-poles" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Shared Poles</a></li>
+                                <li><a href="solutions.html#service-ducts" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Service Ducts & Microducts</a></li>
+                                <li><a href="solutions.html#fibre-installation" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Fibre Installation & Leasing</a></li>
+                                <li><a href="solutions.html#infrastructure-access" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Infrastructure Access Management</a></li>
+                                <li><a href="solutions.html#asset-records" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Asset Records & Maintenance</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li><a href="about.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                                <li><a href="who-we-work-with.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Who We Work With</a></li>
+                                <li><a href="our-approach.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Our Approach</a></li>
+                                <li><a href="contact.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:mt-0">
+                        <h3 class="text-sm font-semibold leading-6 text-white">Contact</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li class="flex items-start">
+                                <i data-lucide="map-pin" class="h-5 w-5 text-teal shrink-0 mr-3 mt-0.5"></i>
+                                <span class="text-sm leading-6 text-gray-300">
+                                    Plot 23, Bukoto–Kisasi Road<br />
+                                    Opposite Kabira Country Club<br />
+                                    Kampala, Uganda<br />
+                                    P.O. Box 210563
+                                </span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="phone" class="h-5 w-5 text-teal shrink-0 mr-3"></i>
+                                <a href="tel:+256774016000" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">+256 774 016000</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="mail" class="h-5 w-5 text-teal shrink-0 mr-3"></i>
+                                <a href="mailto:info@sharednet.co.ug" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">info@sharednet.co.ug</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+                <p class="text-xs leading-5 text-gray-400">
+                    &copy; 2026 Sharednet Infrastructure Ltd. All rights reserved. Subsidiary of Ron Outsourcing Ltd.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

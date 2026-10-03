@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sharednet Infrastructure Ltd</title>
+    <meta name="description" content="Discuss your infrastructure access requirements, asset management needs, or partnership opportunities.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#012867',
+                        'navy-light': '#02388e',
+                        teal: '#08a1da',
+                        'teal-light': '#0bb7f5',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { -webkit-font-smoothing: antialiased; font-family: Arial, Helvetica, sans-serif; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-white text-gray-900">
+
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <!-- Exact same nav as index.html -->
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="index.html" class="-m-1.5 p-1.5 flex flex-col">
+                    <img src="assets/images/logo.png" alt="Sharednet Infrastructure Ltd" class="h-20 w-auto object-contain">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" id="mobile-menu-open" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-navy">
+                    <span class="sr-only">Open main menu</span>
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-8 items-center">
+                <a href="index.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">Home</a>
+                <a href="about.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">About</a>
+                <a href="solutions.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">Solutions</a>
+                <a href="who-we-work-with.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">Who We Work With</a>
+                <a href="our-approach.html" class="text-sm font-medium leading-6 text-navy transition-colors hover:text-teal">Our Approach</a>
+                <a href="contact.html" class="rounded-md bg-teal px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-light transition-all">Discuss a Project</a>
+            </div>
+        </nav>
+        
+        <div id="mobile-menu" class="hidden lg:hidden" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 z-50 bg-black/20" id="mobile-menu-backdrop"></div>
+            <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-navy/10">
+                <div class="flex items-center justify-between">
+                    <a href="index.html" class="-m-1.5 p-1.5 flex flex-col">
+                        <img src="assets/images/logo.png" alt="Sharednet Infrastructure Ltd" class="h-14 w-auto object-contain">
+                    </a>
+                    <button type="button" id="mobile-menu-close" class="-m-2.5 rounded-md p-2.5 text-navy">
+                        <span class="sr-only">Close menu</span>
+                        <i data-lucide="x" class="h-6 w-6"></i>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-200">
+                        <div class="space-y-2 py-6">
+                            <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Home</a>
+                            <a href="about.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">About</a>
+                            <a href="solutions.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Solutions</a>
+                            <a href="who-we-work-with.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Who We Work With</a>
+                            <a href="our-approach.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navy hover:bg-gray-50 hover:text-teal">Our Approach</a>
+                        </div>
+                        <div class="py-6 flex flex-col gap-4">
+                            <a href="contact.html" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-teal hover:bg-gray-50">Contact Us</a>
+                            <a href="contact.html" class="block rounded-md bg-teal px-3 py-3 text-center text-base font-semibold text-white shadow-sm hover:bg-teal-light">Discuss a Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Header -->
+        <div class="bg-navy py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="max-w-2xl">
+                    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Contact Us</h1>
+                    <p class="mt-6 text-lg leading-8 text-gray-300">
+                        Discuss your infrastructure access requirements, asset management needs, or partnership opportunities.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <!-- Contact Details -->
+                <div>
+                    <h2 class="text-3xl font-bold tracking-tight text-navy">Get in touch</h2>
+                    <p class="mt-4 text-lg leading-8 text-gray-600">
+                        Our team is ready to assist you with structured approaches to shared passive infrastructure.
+                    </p>
+                    
+                    <dl class="mt-10 space-y-8 text-base leading-7 text-gray-600">
+                        <div class="flex gap-x-4">
+                            <dt class="flex-none">
+                                <span class="sr-only">Address</span>
+                                <i data-lucide="map-pin" class="h-7 w-6 text-teal" aria-hidden="true"></i>
+                            </dt>
+                            <dd>
+                                <strong>Sharednet Infrastructure Ltd</strong><br />
+                                Plot 23, Bukoto–Kisasi Road<br />
+                                Opposite Kabira Country Club<br />
+                                Kampala, Uganda<br />
+                                P.O. Box 210563
+                            </dd>
+                        </div>
+                        <div class="flex gap-x-4">
+                            <dt class="flex-none">
+                                <span class="sr-only">Telephone</span>
+                                <i data-lucide="phone" class="h-7 w-6 text-teal" aria-hidden="true"></i>
+                            </dt>
+                            <dd>
+                                <a class="hover:text-navy transition-colors font-medium" href="tel:+256774016000">
+                                    +256 774 016000
+                                </a>
+                            </dd>
+                        </div>
+                        <div class="flex gap-x-4">
+                            <dt class="flex-none">
+                                <span class="sr-only">Email</span>
+                                <i data-lucide="mail" class="h-7 w-6 text-teal" aria-hidden="true"></i>
+                            </dt>
+                            <dd>
+                                <a class="hover:text-navy transition-colors font-medium" href="mailto:info@sharednet.co.ug">
+                                    info@sharednet.co.ug
+                                </a>
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-gray-50 rounded-2xl p-8 sm:p-10 border border-gray-100 shadow-sm relative">
+                    
+                    <!-- Success State -->
+                    <div id="form-success" class="hidden absolute inset-0 bg-gray-50 z-10 flex flex-col items-center justify-center text-center px-8 rounded-2xl">
+                        <i data-lucide="check-circle-2" class="h-16 w-16 text-teal"></i>
+                        <h3 class="text-2xl font-bold text-navy mt-4">Enquiry Submitted</h3>
+                        <p class="text-gray-600 max-w-md mt-2">
+                            Thank you for your interest. We have received your details and will be in touch shortly.
+                        </p>
+                        <div class="mt-6 p-4 bg-white rounded-lg border border-gray-200 text-sm text-gray-500 w-full max-w-sm">
+                            <p>If your request is urgent, please email us directly at <a href="mailto:info@sharednet.co.ug" class="text-teal font-semibold hover:underline">info@sharednet.co.ug</a>.</p>
+                        </div>
+                        <button id="reset-form" class="mt-8 text-sm font-semibold text-navy hover:text-teal transition-colors">
+                            Submit another enquiry
+                        </button>
+                    </div>
+
+                    <!-- Form -->
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2">
+                            <div class="sm:col-span-2">
+                                <label for="name" class="block text-sm font-semibold leading-6 text-navy">Full name</label>
+                                <div class="mt-2.5">
+                                    <input type="text" name="name" id="name" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal sm:text-sm sm:leading-6" />
+                                </div>
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label for="organisation" class="block text-sm font-semibold leading-6 text-navy">Organisation</label>
+                                <div class="mt-2.5">
+                                    <input type="text" name="organisation" id="organisation" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal sm:text-sm sm:leading-6" />
+                                </div>
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label for="email" class="block text-sm font-semibold leading-6 text-navy">Email address</label>
+                                <div class="mt-2.5">
+                                    <input type="email" name="email" id="email" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal sm:text-sm sm:leading-6" />
+                                </div>
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label for="phone" class="block text-sm font-semibold leading-6 text-navy">Telephone number <span class="text-gray-400 font-normal">(optional)</span></label>
+                                <div class="mt-2.5">
+                                    <input type="tel" name="phone" id="phone" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal sm:text-sm sm:leading-6" />
+                                </div>
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label for="enquiry-type" class="block text-sm font-semibold leading-6 text-navy">Enquiry type</label>
+                                <div class="mt-2.5">
+                                    <select id="enquiry-type" name="enquiry-type" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-teal sm:text-sm sm:leading-6 bg-white">
+                                        <option value="" disabled selected>Select an option...</option>
+                                        <option value="Infrastructure access">Infrastructure access</option>
+                                        <option value="Asset management">Asset management</option>
+                                        <option value="Shared poles">Shared poles</option>
+                                        <option value="Ducts and fibre">Ducts and fibre</option>
+                                        <option value="Partnerships">Partnerships</option>
+                                        <option value="General enquiries">General enquiries</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label for="location" class="block text-sm font-semibold leading-6 text-navy">Location or corridor of interest <span class="text-gray-400 font-normal">(optional)</span></label>
+                                <div class="mt-2.5">
+                                    <input type="text" name="location" id="location" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal sm:text-sm sm:leading-6" />
+                                </div>
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label for="message" class="block text-sm font-semibold leading-6 text-navy">Message</label>
+                                <div class="mt-2.5">
+                                    <textarea name="message" id="message" rows="4" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal sm:text-sm sm:leading-6"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Honeypot -->
+                        <input type="text" name="bot-field" class="hidden" tabindex="-1" autocomplete="off" />
+                        
+                        <div class="mt-8 flex justify-end">
+                            <button type="submit" id="submit-btn" class="rounded-md bg-teal px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-teal-light transition-all w-full sm:w-auto">
+                                Submit Enquiry
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white mt-auto">
+        <!-- Exact same footer as index.html -->
+        <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <div class="flex flex-col">
+                        <img src="assets/images/logo.png" alt="Sharednet Infrastructure Ltd" class="h-16 w-auto object-contain brightness-0 invert">
+                    </div>
+                    <p class="text-sm leading-6 text-gray-300 max-w-xs">
+                        A carrier-neutral infrastructure partner for operators, utilities, and asset owners in Uganda.
+                    </p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold leading-6 text-white">Solutions</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li><a href="solutions.html#shared-poles" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Shared Poles</a></li>
+                                <li><a href="solutions.html#service-ducts" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Service Ducts & Microducts</a></li>
+                                <li><a href="solutions.html#fibre-installation" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Fibre Installation & Leasing</a></li>
+                                <li><a href="solutions.html#infrastructure-access" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Infrastructure Access Management</a></li>
+                                <li><a href="solutions.html#asset-records" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Asset Records & Maintenance</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li><a href="about.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                                <li><a href="who-we-work-with.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Who We Work With</a></li>
+                                <li><a href="our-approach.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Our Approach</a></li>
+                                <li><a href="contact.html" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:mt-0">
+                        <h3 class="text-sm font-semibold leading-6 text-white">Contact</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li class="flex items-start">
+                                <i data-lucide="map-pin" class="h-5 w-5 text-teal shrink-0 mr-3 mt-0.5"></i>
+                                <span class="text-sm leading-6 text-gray-300">
+                                    Plot 23, Bukoto–Kisasi Road<br />
+                                    Opposite Kabira Country Club<br />
+                                    Kampala, Uganda<br />
+                                    P.O. Box 210563
+                                </span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="phone" class="h-5 w-5 text-teal shrink-0 mr-3"></i>
+                                <a href="tel:+256774016000" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">+256 774 016000</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="mail" class="h-5 w-5 text-teal shrink-0 mr-3"></i>
+                                <a href="mailto:info@sharednet.co.ug" class="text-sm leading-6 text-gray-300 hover:text-white transition-colors">info@sharednet.co.ug</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+                <p class="text-xs leading-5 text-gray-400">
+                    &copy; 2026 Sharednet Infrastructure Ltd. All rights reserved. Subsidiary of Ron Outsourcing Ltd.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+        
+        // Handle form submission state
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('contact-form');
+            const successState = document.getElementById('form-success');
+            const submitBtn = document.getElementById('submit-btn');
+            const resetBtn = document.getElementById('reset-form');
+
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    // Show sending state
+                    submitBtn.textContent = 'Sending...';
+                    submitBtn.disabled = true;
+                    submitBtn.classList.add('opacity-70', 'cursor-not-allowed');
+
+                    // Simulate API delay
+                    setTimeout(() => {
+                        form.classList.add('hidden');
+                        successState.classList.remove('hidden');
+                        
+                        // Reset button for next time
+                        submitBtn.textContent = 'Submit Enquiry';
+                        submitBtn.disabled = false;
+                        submitBtn.classList.remove('opacity-70', 'cursor-not-allowed');
+                        form.reset();
+                    }, 1500);
+                });
+            }
+
+            if (resetBtn) {
+                resetBtn.addEventListener('click', () => {
+                    successState.classList.add('hidden');
+                    form.classList.remove('hidden');
+                });
+            }
+        });
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
